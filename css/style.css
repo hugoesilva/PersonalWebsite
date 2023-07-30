@@ -1,0 +1,1017 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* leave the place where it scrolls to centered */
+    /* scroll-padding-top: 50px; */
+}
+
+/* ----------- NAV BAR ----------- */
+
+#header {
+    width: 100%;
+    /* set background image to a fade from top left to bottom right from dark blue to darker blue to black */
+    background: linear-gradient(135deg, #151515 0%, #222a4b 50%, #111010 100%);
+    /* make header fixed when scrolling down the page */
+    /* position: fixed;
+    z-index: 2; */
+}
+
+.container {
+    padding: 4px 2%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: centre;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 2px;
+}
+
+nav ul li {
+    display: inline-block;
+    /* leave space between links */
+    margin: 0 20px;
+    padding-top: 5px;
+}
+
+.flag {
+    width: 40px;
+    height: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #8bf192;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+/* if nav ul li is active */
+/* nav ul li a.active {
+    color: #8bf192;
+}
+ */
+nav ul li a:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+/* ----------------- SHORT BIOGRAPHY ----------------- */
+
+#bio {
+    /* set background image to a fade from top left to bottom right from dark blue to darker blue to black */
+    background: linear-gradient(135deg, #444444 0%, #222a4b 50%, #111010 100%);
+    padding-bottom: 80px;
+    /* set a border */
+    border: 2px solid #101535;
+}
+
+.hugo {
+    /* set a border around the image */
+    border: 5px solid #505050;
+    width: 280px;
+    height: 260px;
+    border-radius: 60%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.bio_img_title {
+    position: relative;
+    text-align: center;
+}
+
+.bio_img_title h1 {
+    font-weight: 700;
+    margin: 5px 0;
+    /* set white text */
+    color: #fff;
+}
+
+.bio_img_title p {
+    color: #fff;
+}
+
+
+.bio_section {
+    /* centre in the middle of the page */
+    display: inline-flex;
+    /* align items horizontally */
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 105px;
+    padding-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+.bio_section_text {
+    font-size: 15px;
+    margin: 30px 50px;
+    color: #fff;;
+}
+
+.bio_section_text p {
+    /* space between lines */
+    width: 80%;
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 20px 0px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.bio_section_text p span {
+    font-weight: 700;
+}
+
+.github_link h1 {
+    /* align text with image */ 
+    margin-left: 15px;
+    /* set text color to light purple */
+    color: #8b97f1;
+    font-size: 26px;
+}
+
+.github_link a {
+    /* remove underline */
+    text-decoration: none;
+}
+
+/* make github_link image increase height when hovering it */
+.github_link:hover img {
+    transform: translate(0, -10px);
+}
+
+.github_link:hover h1 {
+    transform: translate(0, -10px);
+}
+
+.github {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+/* set image color to a the blue link color */
+    filter: invert(0.5) sepia(1) saturate(3) hue-rotate(200deg);
+}
+
+.linkedin {
+    width: 150px;
+    height: 160px;
+}
+
+.linkedin_link {
+    margin-left: 20px;
+}
+
+.linkedin_link a {
+    /* remove underline */
+    text-decoration: none;
+}
+
+.linkedin_link:hover img {
+    transform: translate(0, -10px);
+}
+
+.linkedin_link:hover h1 {
+    transform: translate(0, -10px);
+}
+
+.linkedin_link h1 {
+    /* align text with image */ 
+    margin-left: 23px;
+    /* set text color to light purple */
+    color: #2068d5;
+    /* get text closer to image */
+    margin-top: -20px;
+    /* lower font */
+    font-size: 26px;
+}
+
+.personal_links {
+    /* center items in the middle of the page */
+    display: flex;
+    justify-content: center;
+    /* space between items */
+    margin-left: 100px;
+    margin-top: -250px;
+}
+
+.CV {
+    /* font size */
+    font-size: 40px;
+    
+    padding-left: 50px;
+    padding-top: 53px;
+}
+
+.CV a {
+    /* set text color to white */
+    color: #fff;
+    /* set text to be bold */
+    font-weight: 500;
+    /* set text to be bigger */
+    font-size: 20px;
+    /* set text to be closer to the image */
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* remove underline */
+    text-decoration: none;
+    /* round edges */
+    border-radius: 10px;
+    /* center text */
+    text-align: center;
+}
+
+.CV a:hover {
+    transform: translate(0px, -5px);
+    background: #8b97f1;
+}
+
+/* ----------------- TEACHING ----------------- */
+
+.teaching_background {
+    background: linear-gradient(225deg, #111010, #222a4b 50%, #444444 100%);
+}
+
+.teaching_section {
+    /* centre in the middle of the page */
+    display: inline-flex;
+    /* align items horizontally */
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 105px;
+    padding-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    /* set a thin border */
+    border: 2px solid #101535;
+}
+
+.teaching_img_title {
+    position: relative;
+    text-align: center;
+}
+
+.teaching_img_title h1 {
+    font-weight: 700;
+    margin: 5px 0;
+    /* set white text */
+    color: #fff;
+}
+
+.teaching_img_title p {
+    color: #fff;
+}
+
+.teaching_img_title a {
+    /* remove underline */
+    text-decoration: none;
+}
+
+.teaching_section_text {
+    font-size: 15px;
+    margin: 20px 50px;
+    color: #fff;;
+}
+
+.teaching_section_text p {
+    /* space between lines */
+    width: 80%;
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 20px 0px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.teaching_section_text p span {
+    font-weight: 700;
+}
+
+.afterschools {
+    border: 5px solid #505050;
+    width: 280px;
+    height: 200px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+
+/* ----------------- WORK EXPERIENCE ----------------- */
+
+
+.work_exp_background {
+    background: linear-gradient(135deg, #444444 0%, #222a4b 50%, #111010 100%);
+    border: 2px solid #101535;
+}
+
+.work_exp_section {
+    /* centre in the middle of the page */
+    display: inline-flex;
+    /* align items horizontally */
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 105px;
+    padding-bottom: 0px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.work_exp_img_title {
+    position: relative;
+    text-align: center;
+}
+
+.work_exp_img_title h1 {
+    font-weight: 700;
+    margin: 5px 0;
+    /* set white text */
+    color: #fff;
+}
+
+.work_exp_img_title p {
+    color: #fff;
+}
+
+.work_exp_section_text {
+    font-size: 15px;
+    margin: 20px 50px;
+    color: #fff;;
+}
+
+
+.work_exp_section_text p {
+    /* space between lines */
+    width: 80%;
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 20px 0px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.work_exp_section_text p span {
+    font-weight: 700;
+}
+
+.work_exp_img_title a {
+    /* remove underline */
+    text-decoration: none;
+}
+
+.critical {
+    width: 200px;
+    height: 200px;
+    margin: 20px 40px;
+}
+
+.critical_images {
+    /* display inline images*/
+    display: flex;
+    /* center on page */
+    justify-content: center;
+
+    padding-bottom: 50px;
+    margin-top: -100px;
+}
+
+.critical_summer_camp {
+    width: 140px;
+    height: 120px;
+    /* set a border */
+    border: 2px solid #505050;
+}
+
+.fikalab {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #505050;
+    margin-right: 20px;
+}
+
+
+/* ----------------- ABOUT ME ----------------- */
+
+.about_me_background {
+    background: linear-gradient(225deg, #111010, #222a4b 50%, #444444 100%);
+    padding-bottom: 60px;
+}
+
+.about_me_img_title {
+    position: relative;
+    text-align: center;
+}
+
+.about_me_img_title h1 {
+    font-weight: 700;
+    margin: 5px 0;
+    /* set white text */
+    color: #fff;
+}
+
+.about_me_img_title p {
+    color: #fff;
+}
+
+.about_me_section_text {
+    /* set the text to be centered in the page */
+    text-align: center;
+    color: #fff;;
+}
+
+.about_me_section_text p {
+    /* space between lines */
+    width: 100%;
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 30px 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #fff;
+    font-size: 18px;
+    /* when line changes, push it to the left */
+    text-align: left;
+}
+
+.about_me_section_text h1 {
+    /* set text color to white */
+    color: #fff;
+    /* set text to be bold */
+    font-weight: 700;
+    /* set text to be bigger */
+    font-size: 30px;
+    /* set text to be closer to the image */
+    padding-top: 60px;
+}
+
+.about_me_section_text p span {
+    font-weight: 700;
+}
+
+.about_me_images {
+    /* align items horizontally */
+    display: inline-flex;
+    /* set the text to be centered in the page */
+    text-align: center;
+    /* set the text to be closer to the image */
+    padding-top: 40px;
+}
+
+.ist {
+    width: px;
+    height: 130px;
+}
+
+.madeira {
+    width: 180px;
+    height: 130px;
+    margin: 0px 20px;
+}
+
+.pt {
+    width: 180px;
+    height: 130px;  
+}
+
+.ist_text h1 {
+    /* set font size */
+    font-size: 15px;
+}
+
+.ist_text p {
+    /* set font size */
+    font-size: 15px;
+}
+
+.ulisboa {
+    width: 370px;
+    height: 130px;
+    margin: 0px 20px;
+/* set logo colour to white */
+    filter: invert(1);
+}
+
+.about_me_section {
+    border: 2px solid #101535;
+}
+
+.images_about_me {
+    /* display inline images*/
+    display: inline-flex;
+    padding-top: 20px;
+}
+
+
+
+.btn {
+    display: inline-block;
+    background:#1b4d97;
+}
+
+/* ----------- RESPONSIVE ------------ */
+
+
+/* css for small screen */
+
+nav .cross {
+    display: none;
+}
+nav .menu {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    /* make header fixed when scrolling down the page */
+
+    /* #header {
+        position: fixed;
+        z-index: 2;
+    } */
+    
+
+    nav .flag {
+        display: none;
+    }
+
+    nav .cross {
+        display: block;
+    }
+    nav .menu {
+        display: block;
+    }
+
+    nav ul {
+        background: linear-gradient(135deg, #151515 0%, #222a4b 50%, #111010 100%);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .cross {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    nav ul .menu {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .menu {
+        /* set size */
+        width: 30px;
+        height: 30px;
+        /* set image color to white */
+        filter: invert(1);
+    }
+    .cross {
+        /* set size */
+        width: 22px;
+        height: 22px;
+        /* set image color to white */
+        filter: invert(1);
+    }
+
+    .page {
+        width: 100%;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        /* adjust size to screen size */
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    /* ----- BIO ----- */
+
+    
+
+    .bio_section {
+        /* display items vertically and centered */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* set the text to be centered in the page */
+        text-align: center;
+        /* set the text to be closer to the image */
+        font-weight: 500;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        /* set a thin border */
+    }
+    
+    
+    .bio_section_text {
+        font-size: 12px;
+        margin: 0px 10px;
+        margin-top: 20px;
+        color: #fff;
+        /* display the text lines vertically */
+    }
+
+    .bio_section_text h1 {
+        margin: 10px 0px;
+    }
+    
+    .bio_section_text p {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .bio_section_text p span {
+        font-weight: 700;
+    }
+    
+    .github_link h1 {
+        /* align text with image */ 
+        /* set text color to light purple */
+        color: #8b97f1;
+        font-size: 20px;
+        margin-left: 7px;
+    }
+    
+    .github {
+        width: 80px;
+        height: 80px;
+        margin-left: 0px;
+    /* set image color to a the blue link color */
+        filter: invert(0.5) sepia(1) saturate(3) hue-rotate(200deg);
+    }
+
+    .linkedin {
+        width: 90px;
+        height: 100px;
+    }
+    
+    .linkedin_link {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        /* center in the page */
+    }
+    
+    .linkedin_link h1 {
+        /* align text with image */ 
+        margin-left: 5px;
+        /* set text color to light purple */
+        color: #2068d5;
+        /* get text closer to image */
+        margin-top: -10px;
+        /* lower font */
+        font-size: 20px;
+    }
+    
+    .personal_links {
+        /* center horizontally all the content in the page */
+        display: flex;
+        justify-content: space-between;
+
+        margin-left: 0px;
+
+        padding-top: 250px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        /* leave space between content */
+
+        
+
+    }
+
+    .CV {
+        /* font size */
+        font-size: 20px;
+        
+        padding-left: 0px;
+        padding-top: 32px;
+        margin-right: 0px;
+    }
+    
+    .CV a {
+        /* set text color to white */
+        color: #fff;
+        /* set text to be bold */
+        font-weight: 500;
+        /* set text to be bigger */
+        font-size: 20px;
+        /* set text to be closer to the image */
+        padding-left: 15px;
+        padding-right: 15px;
+        /* remove underline */
+        text-decoration: none;
+        /* round edges */
+        border-radius: 10px;
+    }
+
+    /* ------ TEACHING ------ */
+
+    .teaching_section {
+        /* display items vertically and centered */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* set the text to be centered in the page */
+        text-align: center;
+        /* set the text to be closer to the image */
+        font-weight: 500;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        /* set a thin border */
+        border: 2px solid #101535;
+    }
+
+    .teaching_section_text {
+        font-size: 12px;
+        margin: 20px 0px;
+        color: #fff;
+        text-align: center;
+        /* display the text lines vertically */
+    }
+
+    .teaching_section_text h1 {
+        margin: 10px 15px;
+        /* center */
+        text-align: center;
+
+    }
+
+    .teaching_section_text p {
+        width: 100%;
+        margin: 0px 0px;
+        padding-left: 100px;
+        padding-right: 100px;
+        /* leave space between paragraphs */
+        margin-bottom: 20px;
+    }
+
+    .teaching_section_text p span {
+        font-weight: 700;
+    }
+
+    .teaching_section_text p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .teaching_section_text h1 {
+        padding-top: 20px;
+    }
+
+    /* ------ WORK ------ */
+
+    .work_exp_section {
+        /* display items vertically and centered */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* set the text to be centered in the page */
+        text-align: center;
+        /* set the text to be closer to the image */
+        font-weight: 500;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        /* set a thin border */
+    }
+
+    .work_exp_section_text {
+        font-size: 12px;
+        margin: 20px 0px;
+        color: #fff;
+        /* display the text lines vertically */
+    }
+
+    .work_exp_section_text h1 {
+        margin: 10px;
+    }
+
+    .work_exp_section_text p {
+        width: 100%;
+        margin: 0px 0px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .work_exp_section_text p span {
+        font-weight: 700;
+    }
+
+    .work_exp_section_text p {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .work_exp_section_text h1 {
+        padding-top: 20px;
+    }
+
+    .critical_images {
+        margin-top: 0px;
+    }
+
+    /* ------ ABOUT ME ------ */
+
+    .about_me_section {
+        /* display items vertically and centered */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* set the text to be centered in the page */
+        text-align: center;
+        /* set the text to be closer to the image */
+        font-weight: 500;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        /* set a thin border */
+        border: 2px solid #101535;
+    }
+
+    .about_me_section_text {
+        font-size: 12px;
+        margin: 20px 0px;
+        color: #fff;
+        /* display the text lines vertically */
+    }
+
+    .about_me_section_text h1 {
+        margin: 10px;
+    }
+
+    .about_me_section_text p span {
+        font-weight: 700;
+    }
+
+    .about_me_section_text p {
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+    }
+
+    .about_me_section_text h1 {
+        padding-top: 20px;
+    }
+
+    .images_about_me {
+        /* allign vertically */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .madeira_pt_flags {
+        margin-top: 5px;
+        margin-right: 5px;
+        /* center */
+        text-align: center;
+        padding-right: 15px;
+    }
+
+    .madeira {
+        width: 140px;
+        height: 100px;
+    }
+
+    .pt {
+        width: 140px;
+        height: 100px;
+    }
+
+    .ist {
+        width: 100px;
+        height: 120px;
+        padding-bottom: 10px;
+    }
+
+}
+
+
+/* for ipads */
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+
+    .personal_links {
+        padding-top: 200px;
+        /* center items in screen */
+        display: flex;
+        padding-left: 0px;
+        padding-right: 80px;
+    }
+
+    .images_about_me {
+        /* allign vertically */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .critical_images {
+        /* center them in screen horizontally*/
+        display: flex;
+        justify-content: center;
+
+        margin-top: 0px;
+
+    }
+
+    .madeira_pt_flags {
+        margin-top: 5px;
+        margin-right: 5px;
+        /* center */
+        text-align: center;
+        padding-right: 15px;
+    }
+
+    .madeira {
+        width: 140px;
+        height: 100px;
+    }
+
+    .pt {
+        width: 140px;
+        height: 100px;
+    }
+
+    .ist {
+        width: 100px;
+        height: 120px;
+        padding-bottom: 10px;
+    }
+
+}
+
+/* on 810x1080 */
+
+/* @media only screen and (min-width: 810px) and (max-width: 1080px) {
+
+    .personal_links {
+        padding-top: 50px;
+        display: flex;
+        padding-left: 240px;
+        padding-right: 0px;
+    }
+
+    .critical_images {
+        padding-right: 100px;
+        margin-top: -50px;
+        margin-left: 280px;
+    }
+
+} */
