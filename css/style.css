@@ -553,6 +553,7 @@ nav ul li a:hover::after {
     /* display inline images*/
     display: inline-flex;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
