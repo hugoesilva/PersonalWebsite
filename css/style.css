@@ -935,7 +935,7 @@ nav .menu {
         flex-direction: column;
     }
 
-    .madeira_pt_flags {
+    .madeira_pt_sweden_flags {
         margin-top: 5px;
         margin-right: 5px;
         /* center */
@@ -949,6 +949,11 @@ nav .menu {
     }
 
     .pt {
+        width: 140px;
+        height: 100px;
+    }
+
+    .sweden {
         width: 140px;
         height: 100px;
     }
