@@ -264,7 +264,7 @@ nav ul li a:hover::after {
 /* ----------------- TEACHING ----------------- */
 
 .teaching_background {
-    background: linear-gradient(225deg, #111010, #222a4b 50%, #444444 100%);
+    background: linear-gradient(135deg, #444444 0%, #222a4b 50%, #111010 100%);
 }
 
 .teaching_section {
@@ -336,7 +336,7 @@ nav ul li a:hover::after {
 
 
 .work_exp_background {
-    background: linear-gradient(135deg, #444444 0%, #222a4b 50%, #111010 100%);
+    background: linear-gradient(225deg, #111010, #222a4b 50%, #444444 100%);
     border: 2px solid #101535;
 }
 
@@ -393,6 +393,12 @@ nav ul li a:hover::after {
 .work_exp_img_title a {
     /* remove underline */
     text-decoration: none;
+}
+
+.chalmers {
+    width: 200px;
+    height: 250px;
+    margin: 20px 40px;
 }
 
 .critical {
@@ -496,9 +502,21 @@ nav ul li a:hover::after {
 .ist {
     width: px;
     height: 130px;
+    margin: 0px 20px;
+}
+
+.chalmers_about_me {
+    height: 130px;
+    margin: 0px 20px;
 }
 
 .madeira {
+    width: 180px;
+    height: 130px;
+    margin: 0px 20px;
+}
+
+.sweden {
     width: 180px;
     height: 130px;
     margin: 0px 20px;
