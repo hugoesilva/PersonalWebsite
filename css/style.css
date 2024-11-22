@@ -100,7 +100,7 @@ nav ul li a:hover::after {
     /* set a border around the image */
     border: 5px solid #505050;
     width: 280px;
-    height: 260px;
+    height: 270px;
     border-radius: 60%;
     overflow: hidden;
     margin: 20px 0;
